@@ -124,6 +124,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\IocInjectFilter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -162,10 +163,10 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\User\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -179,6 +180,20 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MWebTest.Models\MWebTest.Models.csproj">
+      <Project>{e920db20-8385-44b8-bcde-5dc01d158b34}</Project>
+      <Name>MWebTest.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyWebTest.Controller.Users\MyWebTest.Controllers.Users.csproj">
+      <Project>{bff6a8aa-cfe8-4200-b713-428450cec44e}</Project>
+      <Name>MyWebTest.Controllers.Users</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyWebTest.Ioc\MyWebTest.Ioc.csproj">
+      <Project>{f909941c-7030-4184-8910-be04229d30d7}</Project>
+      <Name>MyWebTest.Ioc</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

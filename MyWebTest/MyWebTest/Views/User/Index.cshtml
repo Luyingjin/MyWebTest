@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+@model IEnumerable<MWebTest.Models.User>
+<h2>Index</h2>
+<dic>
+    <table>
+        <tbody>
+            <tr>
+                <th>ID</th>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>性别</th>
+            </tr>
+
+            @if (Model != null && Model.Count() > 0)
+            {
+
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Name</td>
+                        <td>@item.Age</td>
+                        <td>@item.Gender</td>
+                        
+                    </tr>
+                }
+
+            }
+            </tbody>
+        
+    </table>
+</dic>

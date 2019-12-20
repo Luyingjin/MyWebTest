@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Jotting.Utility.Factory</name>
+    </assembly>
+    <members>
+        <member name="T:Jotting.Utility.Factory.Entity.FactoryScope">
+            <summary>
+            线程范围内，工厂创建的实例
+            </summary>
+        </member>
+        <member name="M:Jotting.Utility.Factory.Entity.FactoryScope.InitScope">
+            <summary>
+            绑定线程，一个线程中只能有一个。调用<see cref="M:Jotting.Utility.Factory.Entity.FactoryScope.Free"/>后释放
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jotting.Utility.Factory.Entity.FactoryScope.GetAlive">
+            <summary>
+            获取实例
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jotting.Utility.Factory.Entity.FactoryScope.Free">
+            <summary>
+            释放线程，可调用<see cref="M:Jotting.Utility.Factory.Entity.FactoryScope.InitScope"/>新建
+            </summary>
+        </member>
+    </members>
+</doc>

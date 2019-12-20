@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Jotting.Utility.InversionOfControl</name>
+    </assembly>
+    <members>
+        <member name="T:Jotting.Utility.InversionOfControl.DependencyInjection">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Jotting.Utility.InversionOfControl.DependencyInjection.#ctor(System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="injectProperty">注入到属性</param>
+            <param name="injectParameter">注入到构造函数参数</param>
+            <param name="injectField">注入到字段</param>
+        </member>
+        <member name="M:Jotting.Utility.InversionOfControl.DependencyInjection.Register(System.Object,System.Type,System.Boolean)">
+            <summary>
+            注册，通过类型创建实例
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+            <param name="singleton"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jotting.Utility.InversionOfControl.DependencyInjection.UnRegister(System.Object)">
+            <summary>
+            反注册
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jotting.Utility.InversionOfControl.DependencyInjection.Register``1(System.Object,System.Boolean)">
+            <summary>
+            注册，通过类型创建实例
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="key"></param>
+            <param name="singleton"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jotting.Utility.InversionOfControl.DependencyInjection.Register(System.Object,System.Delegate,System.Boolean)">
+            <summary>
+            注册，通过函数创建实例
+            </summary>
+            <param name="key"></param>
+            <param name="creator"></param>
+            <param name="singleton"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jotting.Utility.InversionOfControl.DependencyInjection.IsRegisterKey(System.Object)">
+            <summary>
+            是否存在key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jotting.Utility.InversionOfControl.DependencyInjection.Lookup``1(System.Object)">
+            <summary>
+            创建新实例
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jotting.Utility.InversionOfControl.DependencyInjection.Lookup(System.Object)">
+            <summary>
+            创建新实例
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jotting.Utility.InversionOfControl.DependencyInjection.Inject``1(``0)">
+            <summary>
+            自动注入
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="o"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jotting.Utility.InversionOfControl.DependencyInjection.SetJudge(System.Func{Jotting.Utility.InversionOfControl.Entity.KeyInfo,System.Boolean})">
+            <summary>
+            设置判断属性是否需要注入
+            </summary>
+            <param name="judge"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jotting.Utility.InversionOfControl.DependencyInjection.SetKeyGetter(System.Func{Jotting.Utility.InversionOfControl.Entity.KeyInfo,System.Object})">
+            <summary>
+            设置获取key方法，默认接口类型
+            </summary>
+            <param name="getKey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jotting.Utility.InversionOfControl.DependencyInjection.SetGenericTypeArgsGetter(System.Func{Jotting.Utility.InversionOfControl.Entity.KeyInfo,System.Type[]})">
+            <summary>
+            设置获取泛类参数的方法
+            </summary>
+            <param name="getter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jotting.Utility.InversionOfControl.DependencyInjection.SetMaxDepth(System.Int32)">
+            <summary>
+            设置自动注入的最大深度
+            </summary>
+            <param name="num"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jotting.Utility.InversionOfControl.DependencyInjection.SetCache(System.Boolean)">
+            <summary>
+            设置单次注入的缓存(共用相同类型实例)，可解决互引问题，默认开启
+            </summary>
+            <param name="open">开启后，可存在互引</param>
+            <returns></returns>
+        </member>
+        <member name="T:Jotting.Utility.InversionOfControl.Entity.KeyInfo">
+            <summary>
+            对象信息
+            </summary>
+        </member>
+        <member name="M:Jotting.Utility.InversionOfControl.Entity.KeyInfo.#ctor(System.Reflection.PropertyInfo)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+        </member>
+        <member name="M:Jotting.Utility.InversionOfControl.Entity.KeyInfo.#ctor(System.Reflection.FieldInfo)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+        </member>
+        <member name="M:Jotting.Utility.InversionOfControl.Entity.KeyInfo.#ctor(System.Reflection.ParameterInfo)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+        </member>
+        <member name="P:Jotting.Utility.InversionOfControl.Entity.KeyInfo.CustomAttributeProvider">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Jotting.Utility.InversionOfControl.Entity.KeyInfo.Type">
+            <summary>
+            对象类型
+            </summary>
+        </member>
+        <member name="P:Jotting.Utility.InversionOfControl.Entity.KeyInfo.KeyInfoType">
+            <summary>
+            对象信息类型
+            </summary>
+        </member>
+        <member name="P:Jotting.Utility.InversionOfControl.Entity.KeyInfo.Info">
+            <summary>
+            对象
+            </summary>
+        </member>
+        <member name="T:Jotting.Utility.InversionOfControl.Entity.KeyInfoType">
+            <summary>
+            对象信息类型
+            </summary>
+        </member>
+        <member name="F:Jotting.Utility.InversionOfControl.Entity.KeyInfoType.PropertyInfo">
+            <summary>
+            属性
+            </summary>
+        </member>
+        <member name="F:Jotting.Utility.InversionOfControl.Entity.KeyInfoType.FieldInfo">
+            <summary>
+            字段
+            </summary>
+        </member>
+        <member name="F:Jotting.Utility.InversionOfControl.Entity.KeyInfoType.ParameterInfo">
+            <summary>
+            参数
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,12 @@
+D:\Code\Test\githubtest\MyWebTest\MyWebTest.Ioc\bin\Debug\MyWebTest.Ioc.dll
+D:\Code\Test\githubtest\MyWebTest\MyWebTest.Ioc\bin\Debug\MyWebTest.Ioc.pdb
+D:\Code\Test\githubtest\MyWebTest\MyWebTest.Ioc\bin\Debug\Jotting.Utility.Factory.dll
+D:\Code\Test\githubtest\MyWebTest\MyWebTest.Ioc\bin\Debug\Jotting.Utility.InversionOfControl.dll
+D:\Code\Test\githubtest\MyWebTest\MyWebTest.Ioc\bin\Debug\Jotting.Utility.Reflection.dll
+D:\Code\Test\githubtest\MyWebTest\MyWebTest.Ioc\bin\Debug\Jotting.Utility.Factory.xml
+D:\Code\Test\githubtest\MyWebTest\MyWebTest.Ioc\bin\Debug\Jotting.Utility.InversionOfControl.xml
+D:\Code\Test\githubtest\MyWebTest\MyWebTest.Ioc\bin\Debug\Jotting.Utility.Reflection.xml
+D:\Code\Test\githubtest\MyWebTest\MyWebTest.Ioc\obj\Debug\MyWebTest.Ioc.csprojAssemblyReference.cache
+D:\Code\Test\githubtest\MyWebTest\MyWebTest.Ioc\obj\Debug\MyWebTest.Ioc.csproj.CopyComplete
+D:\Code\Test\githubtest\MyWebTest\MyWebTest.Ioc\obj\Debug\MyWebTest.Ioc.dll
+D:\Code\Test\githubtest\MyWebTest\MyWebTest.Ioc\obj\Debug\MyWebTest.Ioc.pdb
