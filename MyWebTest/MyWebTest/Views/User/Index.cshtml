@@ -24,12 +24,21 @@
                         <td>@item.Name</td>
                         <td>@item.Age</td>
                         <td>@item.Gender</td>
-                        
+
                     </tr>
                 }
 
             }
-            </tbody>
-        
+        </tbody>
+
     </table>
 </dic>
+
+
+
+<button id="BtnSave" type="button" onclick="add()" class="btn btn-primary m-r-sm">打开添加</button>
+<script type="text/javascript">
+    function add() {
+        location.href = "/User/Edit?Id=1";
+    }
+</script>

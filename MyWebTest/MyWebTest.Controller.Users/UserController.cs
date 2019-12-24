@@ -11,8 +11,7 @@ namespace MyWebTest.Controllers.Users
     public class UserController: Controller
     {
         List<User> users = null;
-       
-        public ActionResult Index()
+       public UserController()
         {
             users = new List<User>();
             for (int i = 1; i <= 10; i++)
@@ -22,12 +21,30 @@ namespace MyWebTest.Controllers.Users
                     Id = i,
                     Age = i + 20,
                     Gender = i % 2 == 0 ? "男" : "女",
-                    Name = $"Name{i}"
+                    Name = $"Name{i}",
+                    ChildList = new List<User>() { new User { Id = i + 10, Name =$"{i}_Name{i+10}"} }
+
                 });
             }
+        }
+        public ActionResult Index()
+        {
+            
             return View(users);
         }
 
+        public ActionResult Edit(int? Id)
+        {
+            
+            return View(Id!=null?users.FirstOrDefault(m => m.Id == Id):new MWebTest.Models.User());
+        }
+
+        [HttpPost]
+        public ActionResult Edit(User userDto)
+        {
+
+            return View(userDto);
+        }
         
     }
 }

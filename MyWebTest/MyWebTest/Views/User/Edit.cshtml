@@ -1,0 +1,111 @@
+﻿
+@{
+    ViewBag.Title = "Edit";
+    Model.ChildList=Model.ChildList == null ? new List<MWebTest.Models.User>() : Model.ChildList as List<MWebTest.Models.User>;
+}
+@model MWebTest.Models.User
+    <div>
+        @using (Html.BeginForm("Edit", "User", FormMethod.Post, new { @class = "form-horizontal", enctype = "multipart/form-data", id = "DetialForm", name = "DetialForm" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.HiddenFor(m => m.Id, new { @class = "DetialID" })
+            <div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="col-sm-6">
+                            <label class="control-label">ID</label>
+                            <input class="form-control" name="Id" type="text" value="@Model.Id" readonly/>
+                        </div>
+                        <div class="col-sm-6">
+                            <label class="control-label">姓名</label>
+                            <input class="form-control" name="Name" type="text" value="@Model.Name" readonly />
+                        </div>
+                        <div class="col-sm-6">
+                            <label class="control-label">年龄</label>
+                            <input class="form-control" name="Age" type="text" value="@Model.Age" readonly/>
+                        </div>
+                        <div class="col-sm-6">
+                            <label class="control-label">性别</label>
+                            <input class="form-control" name="Gender" type="text" value="@Model.Gender" readonly/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="list" name="ChildList">
+                @if (Model.ChildList.Count > 0)
+                {
+                    for (int i = 0; i < Model.ChildList.Count; i++)
+                    {
+
+                        <div>子项<span>@i</span></div>
+                        
+                            <div id="Child_@i">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="col-sm-6">
+                                            <label class="control-label">ID</label>
+                                            <input class="form-control" name="ChildList[@i].Id" type="text" value="@Model.ChildList[i].Id" />
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label class="control-label">姓名</label>
+                                            <input class="form-control" name="ChildList[@i].Name" type="text" value="@Model.ChildList[i].Name" />
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label class="control-label">年龄</label>
+                                            <input class="form-control" name="ChildList[@i].Age" type="text" value="@Model.ChildList[i].Age" />
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label class="control-label">性别</label>
+                                            <input class="form-control" name="ChildList[@i].Gender" type="text" value="@Model.ChildList[i].Gender" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                       
+                    }
+
+                }
+            </div>
+           
+
+    <div class="col-xs-12 text-center">
+        <button id="BtnSave" type="button" onclick="add()" class="btn btn-primary m-r-sm">添加子项</button>
+        <button class="btn btn-primary" type="submit"><i class="fa fa-save"></i> 保存</button>
+    </div>
+        }
+    </div>
+
+<div id="childHtml" style="display:none;">
+    <div id="Child">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="col-sm-6">
+                    <label class="control-label">ID</label>
+                    <input class="form-control" name="ChildList[9999].Id" type="text" value="" />
+                </div>
+                <div class="col-sm-6">
+                    <label class="control-label">姓名</label>
+                    <input class="form-control" name="ChildList[9999].Name" type="text" value="" />
+                </div>
+                <div class="col-sm-6">
+                    <label class="control-label">年龄</label>
+                    <input class="form-control" name="ChildList[9999].Age" type="text" value="" />
+                </div>
+                <div class="col-sm-6">
+                    <label class="control-label">性别</label>
+                    <input class="form-control" name="ChildList[9999].Gender" type="text" value="" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var g = @Model.ChildList.Count;
+    function add() {
+        var html = $("#childHtml").html();
+        html = html.split("[9999]").join("[" + g + "]");
+        $("#list").append(html);
+        g++;
+    }
+</script>
