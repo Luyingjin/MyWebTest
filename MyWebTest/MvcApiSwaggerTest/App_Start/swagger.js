@@ -22,7 +22,7 @@ window.SwaggerTranslator = {
                 dataType: "json",
                 success: function (data) {
 
-                    var summaryDict = data.ControllerDesc;
+                    var summaryDict = data.vendorExtensions.ControllerDesc;
                     console.log(summaryDict);
                     var id, controllerName, strSummary;
                     $("#resources_container .resource").each(function (i, item) {

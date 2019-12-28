@@ -36,15 +36,14 @@ namespace MvcApiSwaggerTest
                         // Use "SingleApiVersion" to describe a single version API. Swagger 2.0 includes an "Info" object to
                         // hold additional metadata for an API. Version and title are required but you can also provide
                         // additional fields by chaining methods off SingleApiVersion.
-                        //
-                        //c.CustomProvider((defaultProvider) => new SwaggerControllerDescProvider(defaultProvider, xmlFile));
-                       
+
 
                         c.SingleApiVersion("v1", "MvcApiSwaggerTest²âÊÔÎÄ¼þ");
                        
                         if (System.IO.File.Exists(xmlFile)) { c.IncludeXmlComments(xmlFile); }
                         c.OperationFilter<HttpAuthHeaderFilter>();
                         c.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
+                     
                         c.CustomProvider((defaultProvider) => new SwaggerCacheProvider(defaultProvider, xmlFile));
                         // If you want the output Swagger docs to be indented properly, enable the "PrettyPrint" option.
                         //
@@ -189,7 +188,6 @@ namespace MvcApiSwaggerTest
                         //
                         //c.CustomProvider((defaultProvider) => new CachingSwaggerProvider(defaultProvider));
                     })
-                //.EnableSwaggerUi("doc/{*assetPath}", b => b.InjectJavaScript(Assembly.GetExecutingAssembly(), "Swagger_Custom.js"));
                 .EnableSwaggerUi(c =>
                     {
                         c.InjectJavaScript(System.Reflection.Assembly.GetExecutingAssembly(), "MvcApiSwaggerTest.swagger.js");

@@ -212,7 +212,6 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\SwaggerCacheProvider.cs" />
     <Compile Include="App_Start\SwaggerConfig.cs" />
-    <Compile Include="App_Start\SwaggerControllerDescProvider.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="AuthAttributes\ApiAuthorizeAttribute.cs" />
     <Compile Include="AuthAttributes\HttpAuthHeaderFilter.cs" />
@@ -251,7 +250,6 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <EmbeddedResource Include="App_Start\Swagger_Customer.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

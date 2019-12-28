@@ -7,14 +7,23 @@ using System.Web.Mvc;
 
 namespace MvcApiSwaggerTest.Controllers
 {
-    [Description("Home控制器")]
+    /// <summary>
+    /// Home控制器
+    /// </summary>
     public class HomeController : Controller
     {
+        /// <summary>
+        /// Index
+        /// </summary>
+        /// <returns></returns>
         public ActionResult Index()
         {
             return View();
         }
-
+        /// <summary>
+        /// About
+        /// </summary>
+        /// <returns></returns>
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
