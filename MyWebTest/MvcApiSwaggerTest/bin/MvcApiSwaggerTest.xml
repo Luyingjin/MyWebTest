@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MvcApiSwaggerTest</name>
+    </assembly>
+    <members>
+        <member name="T:MvcApiSwaggerTest.App_Start.SwaggerCacheProvider">
+            <summary>
+            swagger显示控制器的描述
+            </summary>
+        </member>
+        <member name="M:MvcApiSwaggerTest.App_Start.SwaggerCacheProvider.#ctor(Swashbuckle.Swagger.ISwaggerProvider,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="swaggerProvider"></param>
+            <param name="xml">xml文档路径</param>
+        </member>
+        <member name="M:MvcApiSwaggerTest.App_Start.SwaggerCacheProvider.GetControllerDesc">
+            <summary>
+            从API文档中读取控制器描述
+            </summary>
+            <returns>所有控制器描述</returns>
+        </member>
+        <member name="M:MvcApiSwaggerTest.App_Start.SwaggerControllerDescProvider.#ctor(Swashbuckle.Swagger.ISwaggerProvider,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="swaggerProvider"></param>
+            <param name="xml">xml文档路径</param>
+        </member>
+        <member name="M:MvcApiSwaggerTest.App_Start.SwaggerControllerDescProvider.GetControllerDesc">
+            <summary>
+            从API文档中读取控制器描述
+            </summary>
+            <returns>所有控制器描述</returns>
+        </member>
+        <member name="T:MvcApiSwaggerTest.AuthAttributes.ApiAuthorizeAttribute">
+            <summary>
+            身份认证拦截器
+            </summary>
+        </member>
+        <member name="M:MvcApiSwaggerTest.AuthAttributes.ApiAuthorizeAttribute.IsAuthorized(System.Web.Http.Controllers.HttpActionContext)">
+            <summary>
+            指示指定的控件是否已获得授权
+            </summary>
+            <param name="actionContext"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MvcApiSwaggerTest.AuthAttributes.ApiAuthorizeAttribute.HandleUnauthorizedRequest(System.Web.Http.Controllers.HttpActionContext)">
+            <summary>
+            处理授权失败的请求
+            </summary>
+            <param name="actionContext"></param>
+        </member>
+        <member name="T:MvcApiSwaggerTest.Controllers.ApiTestController">
+            <summary>
+            Api控制器
+            </summary>
+        </member>
+        <member name="M:MvcApiSwaggerTest.Controllers.ApiTestController.#ctor">
+            <summary>
+            Api控制器
+            </summary>
+        </member>
+        <member name="M:MvcApiSwaggerTest.Controllers.ApiTestController.GetList">
+            <summary>
+            获取用户列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MvcApiSwaggerTest.Controllers.ApiTestController.GetList(System.Int32)">
+            <summary>
+            获取排除固定用户的列表
+            </summary>
+            <param name="id">排除的ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:MvcApiSwaggerTest.Controllers.TokenController.Login(MvcApiSwaggerTest.Models.LoginRequest)">
+            <summary>
+            登录
+            </summary>
+            <param name="loginRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MvcApiSwaggerTest.Controllers.UserInfoTestController.GetUserInfo">
+            <summary>
+            获取用户信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MvcApiSwaggerTest.Controllers.UserInfoTestController.GetStringArr">
+            <summary>
+            获取字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MvcApiSwaggerTest.Models.AuthInfo">
+            <summary>
+            身份验证信息 模拟JWT的payload
+            </summary>
+        </member>
+        <member name="P:MvcApiSwaggerTest.Models.AuthInfo.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:MvcApiSwaggerTest.Models.AuthInfo.Roles">
+            <summary>
+            角色
+            </summary>
+        </member>
+        <member name="P:MvcApiSwaggerTest.Models.AuthInfo.IsAdmin">
+            <summary>
+            是否管理员
+            </summary>
+        </member>
+        <member name="P:MvcApiSwaggerTest.Models.AuthInfo.ExpiryDateTime">
+            <summary>
+            口令过期时间
+            </summary>
+        </member>
+        <member name="T:MvcApiSwaggerTest.Models.LoginRequest">
+            <summary>
+            登录用户信息
+            </summary>
+        </member>
+        <member name="P:MvcApiSwaggerTest.Models.LoginRequest.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:MvcApiSwaggerTest.Models.LoginRequest.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="T:MvcApiSwaggerTest.Models.TokenInfo">
+            <summary>
+            生成的口令信息
+            </summary>
+        </member>
+        <member name="P:MvcApiSwaggerTest.Models.TokenInfo.Success">
+            <summary>
+            是否成功
+            </summary>
+        </member>
+        <member name="P:MvcApiSwaggerTest.Models.TokenInfo.Token">
+            <summary>
+            令牌
+            </summary>
+        </member>
+        <member name="P:MvcApiSwaggerTest.Models.TokenInfo.Message">
+            <summary>
+            错误信息
+            </summary>
+        </member>
+    </members>
+</doc>

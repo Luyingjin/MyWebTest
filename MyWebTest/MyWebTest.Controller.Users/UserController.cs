@@ -29,8 +29,8 @@ namespace MyWebTest.Controllers.Users
         }
         public ActionResult Index()
         {
-            
-            return View(users);
+            return new MvcRazorToPdf.PdfActionResult(users);
+
         }
 
         public ActionResult Edit(int? Id)
@@ -42,7 +42,6 @@ namespace MyWebTest.Controllers.Users
         [HttpPost]
         public ActionResult Edit(User userDto)
         {
-
             return View(userDto);
         }
         

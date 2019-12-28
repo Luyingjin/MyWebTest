@@ -33,3 +33,8 @@ D:\Code\Test\githubtest\MyWebTest\MyWebTest.Controller.Users\bin\Debug\MyWebTest
 D:\Code\Test\githubtest\MyWebTest\MyWebTest.Controller.Users\bin\Debug\Jotting.Utility.InversionOfControl.xml
 D:\Code\Test\githubtest\MyWebTest\MyWebTest.Controller.Users\bin\Debug\Jotting.Utility.Reflection.xml
 D:\Code\Test\githubtest\MyWebTest\MyWebTest.Controller.Users\bin\Debug\Jotting.Utility.Factory.xml
+D:\Code\Test\githubtest\MyWebTest\MyWebTest.Controller.Users\bin\Debug\MyWebTest.Controller.Users.dll.config
+D:\Code\Test\githubtest\MyWebTest\MyWebTest.Controller.Users\bin\Debug\itextsharp.dll
+D:\Code\Test\githubtest\MyWebTest\MyWebTest.Controller.Users\bin\Debug\itextsharp.xmlworker.dll
+D:\Code\Test\githubtest\MyWebTest\MyWebTest.Controller.Users\bin\Debug\MvcRazorToPdf.dll
+D:\Code\Test\githubtest\MyWebTest\MyWebTest.Controller.Users\bin\Debug\itextsharp.xml

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MyWebTest</name>
+    </assembly>
+    <members>
+        <member name="T:MyWebTest.IocInjectFilter">
+            <summary>
+            controller 自动注入
+            </summary>
+        </member>
+    </members>
+</doc>

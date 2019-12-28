@@ -180,3 +180,16 @@ D:\Code\Test\githubtest\MyWebTest\MyWebTest\obj\Debug\MyWebTest.csprojAssemblyRe
 D:\Code\Test\githubtest\MyWebTest\MyWebTest\obj\Debug\MyWebTest.csproj.CopyComplete
 D:\Code\Test\githubtest\MyWebTest\MyWebTest\obj\Debug\MyWebTest.dll
 D:\Code\Test\githubtest\MyWebTest\MyWebTest\obj\Debug\MyWebTest.pdb
+D:\Code\Test\githubtest\MyWebTest\MyWebTest\bin\itextsharp.dll
+D:\Code\Test\githubtest\MyWebTest\MyWebTest\bin\itextsharp.xmlworker.dll
+D:\Code\Test\githubtest\MyWebTest\MyWebTest\bin\MvcRazorToPdf.dll
+D:\Code\Test\githubtest\MyWebTest\MyWebTest\bin\MyWebTest.Controller.Users.dll.config
+D:\Code\Test\githubtest\MyWebTest\MyWebTest\bin\itextsharp.xml
+D:\Code\Test\githubtest\MyWebTest\MyWebTest\bin\MyWebTest.xml
+D:\Code\Test\githubtest\MyWebTest\MyWebTest\bin\System.Net.Http.Formatting.dll
+D:\Code\Test\githubtest\MyWebTest\MyWebTest\bin\System.Web.Http.dll
+D:\Code\Test\githubtest\MyWebTest\MyWebTest\bin\System.Web.Http.WebHost.dll
+D:\Code\Test\githubtest\MyWebTest\MyWebTest\bin\WebActivatorEx.dll
+D:\Code\Test\githubtest\MyWebTest\MyWebTest\bin\System.Net.Http.Formatting.xml
+D:\Code\Test\githubtest\MyWebTest\MyWebTest\bin\System.Web.Http.xml
+D:\Code\Test\githubtest\MyWebTest\MyWebTest\bin\System.Web.Http.WebHost.xml

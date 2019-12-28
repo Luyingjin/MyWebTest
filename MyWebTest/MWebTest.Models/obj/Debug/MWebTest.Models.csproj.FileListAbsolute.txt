@@ -1,5 +1,4 @@
 D:\Code\Test\githubtest\MyWebTest\MWebTest.Models\bin\Debug\MWebTest.Models.dll
 D:\Code\Test\githubtest\MyWebTest\MWebTest.Models\bin\Debug\MWebTest.Models.pdb
-D:\Code\Test\githubtest\MyWebTest\MWebTest.Models\obj\Debug\MWebTest.Models.csprojAssemblyReference.cache
 D:\Code\Test\githubtest\MyWebTest\MWebTest.Models\obj\Debug\MWebTest.Models.dll
 D:\Code\Test\githubtest\MyWebTest\MWebTest.Models\obj\Debug\MWebTest.Models.pdb

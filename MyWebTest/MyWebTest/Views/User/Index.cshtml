@@ -1,44 +1,63 @@
 ﻿
 @{
+    Layout = null;
     ViewBag.Title = "Index";
 }
 @model IEnumerable<MWebTest.Models.User>
-<h2>Index</h2>
-<dic>
-    <table>
-        <tbody>
-            <tr>
-                <th>ID</th>
-                <th>姓名</th>
-                <th>年龄</th>
-                <th>性别</th>
-            </tr>
 
-            @if (Model != null && Model.Count() > 0)
-            {
-
-                foreach (var item in Model)
-                {
-                    <tr>
-                        <td>@item.Id</td>
-                        <td>@item.Name</td>
-                        <td>@item.Age</td>
-                        <td>@item.Gender</td>
-
-                    </tr>
-                }
-
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>领料单</title>
+        <style>
+            body {
+                font-size: 13px;
             }
-        </tbody>
 
-    </table>
-</dic>
+            table.sm {
+                font-size: 12px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Index</h2>
+        <dic>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>ID</th>
+                        <th>姓名</th>
+                        <th>年龄</th>
+                        <th>性别</th>
+                    </tr>
+
+                    @if (Model != null && Model.Count() > 0)
+                    {
+
+                        foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.Id</td>
+                                <td>@item.Name</td>
+                                <td>@item.Age</td>
+                                <td>@item.Gender</td>
+
+                            </tr>
+                        }
+
+                    }
+                </tbody>
+
+            </table>
+        </dic>
 
 
 
-<button id="BtnSave" type="button" onclick="add()" class="btn btn-primary m-r-sm">打开添加</button>
-<script type="text/javascript">
-    function add() {
-        location.href = "/User/Edit?Id=1";
-    }
-</script>
+        <button id="BtnSave" type="button" onclick="add()" class="btn btn-primary m-r-sm">打开添加</button>
+        <script type="text/javascript">
+            function add() {
+                location.href = "/User/Edit?Id=1";
+            }
+        </script>
+        </body>
+</html>
